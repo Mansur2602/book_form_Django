@@ -1,0 +1,21 @@
+
+<h1>Форма регистрации</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ registration_form.as_p }}
+    <button type="submit">Зарегистрироваться</button>
+</form>
+
+<h1>Форма обратной связи</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ contact_form.as_p }}
+    <button type="submit">Отправить сообщение</button>
+</form>
+
+<h1>Форма подписки на новости</h1>
+<form method="POST">
+    {% csrf_token %}
+    {{ book_form.as_p }}
+    <button type="submit">Отправить</button>
+</form>
